@@ -36,4 +36,7 @@ Your actual directory is mapped to __/external__ to allow file exchange with do
 
 - Next proceed to CrossECP-IRIS from OEX   
 
+__Note:__
+_ZPM is not available for Caché_
+
 [Article in DC](https://community.intersystems.com/post/using-ecp-across-iris-and-cach%C3%A9)
