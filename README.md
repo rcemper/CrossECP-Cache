@@ -27,14 +27,14 @@ __Scenario:__
 __Installation for Caché:__  
 - Get the external IPV4 address of the machine that runs your docker environment (example =**_10.10.1.99_** )   
 This is required to establish access between both containers  
-- Download CrossECP-Caché from OEX  
+- Download [CrossECP-Caché from OEX](https://openexchange.intersystems.com/package/CrossECP-Cache)   
 Copy your (loan) license key into cache.key   
 - From the download directory run:   
 __docker-compose up -d --build__    and you are done with Caché.   
 It uses -p __41773__:1972 for the Caché super server and -p __42773__:57772  for the webserver    
 Your actual directory is mapped to __/external__ to allow file exchange with docker environment  
 
-- Next proceed to CrossECP-IRIS from OEX   
+- Next proceed to [CrossECP-IRIS from OEX](https://openexchange.intersystems.com/package/CrossECP-IRIS)   
 
 __Note:__
 _ZPM is not available for Caché_
