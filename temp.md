@@ -51,8 +51,7 @@ Connect to ECP sever on 10.10.1.99 now ? (nNyY) [Y]: Y
 Server status 5 Normal   
 ~~~   
 
-This last step is just for your comfort.   
-Of course, you can do this also from SMP    
-_System > Configuration > ECP Settings > ECP Data Servers_   
+This last step is just for your comfort. Of course, you can do this also from SMP  
+by _System > Configuration > ECP Settings > ECP Data Servers_
 
 Now you are ready fo testing
