@@ -13,6 +13,7 @@ __Attention:__  
 As a customer with a support contract, you may get loan licenses directly from WRC.  
 
 __Scenario:__   
+  
  Caché acts as ECP Server while IRIS acst as ECP Client  
  In IRIS you have a namespace SAMPLES.  
  Globals are in remote database SAMPLES on Caché  
@@ -26,12 +27,32 @@ __Scenario:__
 __Installation:__  
 - Get the external IPV4 address of the machine that runs your docker environment (example = _10.10.1.99_ )   
 This is required to establish access between both containers  
-- Copy your (loan) license key into cache.key Download CrossECP-Caché from OEX 
-From the download directory run:  docker-compose up -d --build    and you are done with Caché.     It uses ports  '41773:1972' for the Caché super server and   '42773:57772' for  the webserver     Your actual directory is mapped to /external to allow file exchange with docker environment    
-Next Download CrossECP-IRIS from OEX Copy your (loan) license key into iris.key
-From the download directory run:  docker-compose up -d --build     It uses these port mapings  -p '45773:1972' -p '46773:52773'  -p '47773:53773' Your actual directory is mapped to /external to allow file exchange with docker environment
-to complete installation and start operation run: docker-compose exec iris iris session iris initECP Server status 1 Not Connected Continue anyway ? (nNyY) [Y]: Y Enter Host-IP-Adress of Docker (nn.nn.nn.nn) [192.168.0.6]: 10.10.1.99        Connect to ECP sever on 192.168.0.6 now ? (nNyY) [Y]: Y Server status 5 Normal
-Of course, you can do this list step also from SMP  System > Configuration > ECP Settings > ECP Data Servers  
-This last step is just for your comfort.
+- Download CrossECP-Caché from OEX  
+Copy your (loan) license key into cache.key   
+- From the download directory run:   
+__docker-compose up -d --build__    and you are done with Caché.   
+It uses -p __41773__:1972 for the Caché super server and -p __42773:57772__ for  the webserver   
+Your actual directory is mapped to __/external__ to allow file exchange with docker environment  
 
-Result:
+- Next Download CrossECP-IRIS from OEX   
+Copy your (loan) license key into iris.key  
+- From the download directory run:  
+__docker-compose up -d --build__   
+It uses these port mapings -p __45773__:1972 -p __46773__:52773 -p __47773__:53773     
+Your actual directory is mapped to __/external__ to allow file exchange with docker environment   
+
+- To complete installation and start operation run:   
+__docker-compose exec iris iris session iris initECP__
+~~~  
+Server status 1 Not Connected 
+Continue anyway ? (nNyY) [Y]: Y 
+Enter Host-IP-Adress of Docker (nn.nn.nn.nn) [192.168.0.6]: 10.10.1.99
+Connect to ECP sever on 10.10.1.99 now ? (nNyY) [Y]: 
+Y Server status 5 Normal
+~~~   
+
+This last step is just for your comfort.   
+Of course, you can do this last step also from SMP   
+_System > Configuration > ECP Settings > ECP Data Servers  _   
+
+Now you are ready fo testing
