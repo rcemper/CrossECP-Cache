@@ -22,7 +22,7 @@ __Scenario:__
  Data-Globals are in remote database SAMPLES on Caché  
  
  This setup allows you to have local data in namespace USER  
- and remote data in Namespace SAMPLES and run your test queries or other exercises.  
+ and remote data in namespace SAMPLES and run your test queries or other exercises.  
 
 __Installation:__  
 - Get the external IPV4 address of the machine that runs your docker environment (example =**_10.10.1.99_** )   
