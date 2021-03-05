@@ -47,12 +47,12 @@ __docker-compose exec iris iris session iris initECP__
 Server status 1 Not Connected 
 Continue anyway ? (nNyY) [Y]: Y 
 Enter Host-IP-Adress of Docker (nn.nn.nn.nn) [192.168.0.6]: 10.10.1.99
-Connect to ECP sever on 10.10.1.99 now ? (nNyY) [Y]: 
-Y Server status 5 Normal
+Connect to ECP sever on 10.10.1.99 now ? (nNyY) [Y]: Y   
+Server status 5 Normal   
 ~~~   
 
 This last step is just for your comfort.   
-Of course, you can do this last step also from SMP     
+Of course, you can do this also from SMP    
 _System > Configuration > ECP Settings > ECP Data Servers_   
 
 Now you are ready fo testing
