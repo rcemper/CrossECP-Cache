@@ -55,3 +55,5 @@ This last step is just for your comfort. Of course, you can do this also from SM
 by _System > Configuration > ECP Settings > ECP Data Servers_
 
 Now you are ready for testing
+
+[Article in DC](https://community.intersystems.com/post/using-ecp-across-iris-and-cach%C3%A9)
