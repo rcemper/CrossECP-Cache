@@ -14,7 +14,7 @@ As a customer with a support contract, you may get loan licenses directly from W
 
 __Scenario:__   
   
- Caché acts as ECP Server while IRIS acst as ECP Client  
+ Caché acts as ECP Server while IRIS acts as ECP Client.  
  In IRIS you have a namespace SAMPLES.  
  Globals are in remote database SAMPLES on Caché  
  Routines (and Classes) are in database USER    
