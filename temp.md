@@ -12,9 +12,19 @@ __Attention:__  
 - The default Community License doesn't allow ECP and can't be used for Caché.  
 As a customer with a support contract, you may get loan licenses directly from WRC.  
 
-__Scenario:__
- Caché acts as ECP Server while IRIS acst as ECP Client   
-- Get the external IPV4 address of the machine that runs your docker environment (example = 10.10.1.99 )   
+__Scenario:__   
+ Caché acts as ECP Server while IRIS acst as ECP Client  
+ In IRIS you have a namespace SAMPLES.  
+ Globals are in remote database SAMPLES on Caché  
+ Routines (and Classes) are in database USER    
+ The classes were just migrated by drag/drop from Cashé Studio to Iris Studio  
+ Data-Globals are in remote database SAMPLES on Caché  
+ 
+ This setup allows you to have local data in namespace USER  
+ and remote data in Namespace SAMPLES and run your test queries or otehr exercises.  
+
+__Installation:__  
+- Get the external IPV4 address of the machine that runs your docker environment (example = _10.10.1.99_ )   
 This is required to establish access between both containers  
 - Copy your (loan) license key into cache.key Download CrossECP-Caché from OEX 
 From the download directory run:  docker-compose up -d --build    and you are done with Caché.     It uses ports  '41773:1972' for the Caché super server and   '42773:57772' for  the webserver     Your actual directory is mapped to /external to allow file exchange with docker environment    
